@@ -1,0 +1,252 @@
+{
+  "branches": [
+    {
+      "id": "suc-centro",
+      "name": "Sucursal Centro",
+      "address": "Calle Sucre #420 esq. Junín",
+      "phone": "+591 3 332-4500",
+      "manager": "Valentina Sologuren",
+      "hours": "10:00 - 22:30",
+      "active": true
+    },
+    {
+      "id": "suc-equipetrol",
+      "name": "Sucursal Equipetrol",
+      "address": "Av. San Martín #1550, Equipetrol",
+      "phone": "+591 3 341-8890",
+      "manager": "Mateo Mendoza",
+      "hours": "11:00 - 23:00",
+      "active": true
+    },
+    {
+      "id": "suc-norte",
+      "name": "Sucursal Norte",
+      "address": "Av. Banzer 4to Anillo #88",
+      "phone": "+591 3 345-2110",
+      "manager": "Camila Rojas",
+      "hours": "11:00 - 22:30",
+      "active": true
+    }
+  ],
+  "users": [
+    {
+      "id": "usr-admin-1",
+      "name": "Valentina Sologuren",
+      "email": "admin@sologelatos.bo",
+      "role": "Administrador",
+      "branch": "Sucursal Centro",
+      "status": "Activo",
+      "demoPin": "Gelatos2026!"
+    },
+    {
+      "id": "usr-caja-1",
+      "name": "Carlos Méndez",
+      "email": "caja@sologelatos.bo",
+      "role": "Cajero",
+      "branch": "Sucursal Centro",
+      "status": "Activo",
+      "demoPin": "Caja2026!"
+    },
+    {
+      "id": "usr-sup-1",
+      "name": "Mateo Mendoza",
+      "email": "equipetrol@sologelatos.bo",
+      "role": "Supervisor",
+      "branch": "Sucursal Equipetrol",
+      "status": "Activo",
+      "demoPin": "Sup2026!"
+    },
+    {
+      "id": "usr-rep-1",
+      "name": "Diego Paredes",
+      "email": "delivery@sologelatos.bo",
+      "role": "Repartidor",
+      "branch": "Sucursal Centro",
+      "status": "Activo",
+      "demoPin": "Rep2026!"
+    }
+  ],
+  "ingredients": [
+    { "id": "ing-01", "name": "Base Láctea Artesanal Crema", "unit": "Litros", "stock": 85, "minStock": 25, "cost": 18, "supplier": "Lácteos del Oriente" },
+    { "id": "ing-02", "name": "Cacao Belga 70%", "unit": "Kg", "stock": 24, "minStock": 10, "cost": 92, "supplier": "Cacao Boliviano S.R.L." },
+    { "id": "ing-03", "name": "Frutilla Fresca Seleccionada", "unit": "Kg", "stock": 32, "minStock": 12, "cost": 26, "supplier": "Frutas Valle Alto" },
+    { "id": "ing-04", "name": "Conos Waffle Crocantes", "unit": "Unidades", "stock": 420, "minStock": 100, "cost": 1.8, "supplier": "Galletería Artesanal Cruz" },
+    { "id": "ing-05", "name": "Canastas de Galleta Waffle", "unit": "Unidades", "stock": 140, "minStock": 40, "cost": 3.5, "supplier": "Galletería Artesanal Cruz" },
+    { "id": "ing-06", "name": "Galletas Oreo / Chips Ahoy", "unit": "Paquetes", "stock": 48, "minStock": 15, "cost": 14, "supplier": "Distribuidora Dulce Sur" },
+    { "id": "ing-07", "name": "Crema para Batir Chantilly", "unit": "Litros", "stock": 38, "minStock": 12, "cost": 34, "supplier": "Lácteos del Oriente" },
+    { "id": "ing-08", "name": "Café Tostado Especialidad", "unit": "Kg", "stock": 16, "minStock": 5, "cost": 115, "supplier": "Café Yungas Premium" },
+    { "id": "ing-09", "name": "Envases Térmicos Solo Gelatos", "unit": "Unidades", "stock": 185, "minStock": 50, "cost": 4.2, "supplier": "Empaques Térmicos Bolivia" },
+    { "id": "ing-10", "name": "Leche Condensada & Jaleas", "unit": "Latas", "stock": 11, "minStock": 15, "cost": 16, "supplier": "Distribuidora Dulce Sur" }
+  ],
+  "suppliers": [
+    { "id": "prov-1", "name": "Lácteos del Oriente", "category": "Lácteos y Cremas", "phone": "+591 71024455", "email": "pedidos@lacteosoriente.bo", "city": "Santa Cruz", "status": "Activo" },
+    { "id": "prov-2", "name": "Cacao Boliviano S.R.L.", "category": "Chocolatería", "phone": "+591 72198830", "email": "ventas@cacaoboliviano.bo", "city": "La Paz", "status": "Activo" },
+    { "id": "prov-3", "name": "Frutas Valle Alto", "category": "Frutas Frescas", "phone": "+591 76451200", "email": "contacto@vallealto.bo", "city": "Cochabamba", "status": "Activo" },
+    { "id": "prov-4", "name": "Galletería Artesanal Cruz", "category": "Conos y Canastas", "phone": "+591 78019944", "email": "ventas@galleteriacruz.bo", "city": "Santa Cruz", "status": "Activo" },
+    { "id": "prov-5", "name": "Café Yungas Premium", "category": "Café de Altura", "phone": "+591 73901122", "email": "tostaduria@cafeyungas.bo", "city": "La Paz", "status": "Activo" }
+  ],
+  "purchases": [
+    { "id": "cmp-001", "date": "2026-11-10", "supplier": "Lácteos del Oriente", "ingredientId": "ing-01", "ingredientName": "Base Láctea Artesanal Crema", "qty": 40, "total": 720, "branch": "Sucursal Centro", "status": "Recibida" },
+    { "id": "cmp-002", "date": "2026-11-11", "supplier": "Galletería Artesanal Cruz", "ingredientId": "ing-04", "ingredientName": "Conos Waffle Crocantes", "qty": 200, "total": 360, "branch": "Sucursal Centro", "status": "Recibida" },
+    { "id": "cmp-003", "date": "2026-11-11", "supplier": "Frutas Valle Alto", "ingredientId": "ing-03", "ingredientName": "Frutilla Fresca Seleccionada", "qty": 15, "total": 390, "branch": "Sucursal Equipetrol", "status": "Recibida" }
+  ],
+  "customers": [
+    { "id": "cli-01", "name": "Sofía Vargas", "phone": "+591 71045520", "address": "Av. Busch #320, Barrio Equipetrol", "ordersCount": 7, "totalSpent": 412, "lastOrder": "2026-11-11" },
+    { "id": "cli-02", "name": "Andrés Gutiérrez", "phone": "+591 76321890", "address": "Calle Ballivián #118, Centro", "ordersCount": 4, "totalSpent": 225, "lastOrder": "2026-11-11" },
+    { "id": "cli-03", "name": "Lucía Fernández", "phone": "+591 69044112", "address": "Condominio Las Palmas, Casa 14", "ordersCount": 9, "totalSpent": 640, "lastOrder": "2026-11-10" },
+    { "id": "cli-04", "name": "Mauricio Arce", "phone": "+591 78541209", "address": "Av. Alemana 3er Anillo #910", "ordersCount": 3, "totalSpent": 168, "lastOrder": "2026-11-10" }
+  ],
+  "orders": [
+    {
+      "id": "SG2026-001",
+      "date": "2026-11-11",
+      "time": "14:20:15",
+      "customer": { "name": "Sofía Vargas", "phone": "71045520", "address": "Av. Busch #320, Equipetrol", "reference": "Portón crema frente al parque" },
+      "paymentMethod": "QR",
+      "deliveryMode": "delivery",
+      "shippingFee": 5,
+      "subtotal": 87,
+      "total": 92,
+      "status": "Entregado",
+      "branch": "Sucursal Centro",
+      "items": [
+        { "productId": "sg-copa-cookie-monster", "name": "Copa Cookie Monster", "size": "Copa Clásica", "qty": 1, "unitPrice": 35, "flavors": ["Blue Ice"] },
+        { "productId": "sg-milkshake-oreo", "name": "Milkshake de Oreo", "size": "Regular", "qty": 1, "unitPrice": 34, "flavors": ["Oreo Cookies & Cream"] },
+        { "productId": "sg-helado-simple", "name": "Helado Simple", "size": "Cono Clásico", "qty": 1, "unitPrice": 18, "flavors": ["Frutilla Natural"] }
+      ]
+    },
+    {
+      "id": "SG2026-002",
+      "date": "2026-11-11",
+      "time": "16:05:42",
+      "customer": { "name": "Andrés Gutiérrez", "phone": "76321890", "address": "Calle Ballivián #118, Centro", "reference": "Edificio Cristal piso 2" },
+      "paymentMethod": "Efectivo",
+      "deliveryMode": "delivery",
+      "shippingFee": 5,
+      "subtotal": 110,
+      "total": 115,
+      "status": "En camino",
+      "branch": "Sucursal Centro",
+      "items": [
+        { "productId": "sg-kilo-1", "name": "Helado 1 Kilogramo (1 KL)", "size": "1 Kilogramo", "qty": 1, "unitPrice": 110, "flavors": ["Chocolate Belga", "Vainilla Cremosa", "Frutilla Natural", "Pistacho Artesanal"] }
+      ]
+    },
+    {
+      "id": "SG2026-003",
+      "date": "2026-11-11",
+      "time": "17:10:08",
+      "customer": { "name": "Lucía Fernández", "phone": "69044112", "address": "Condominio Las Palmas, Casa 14", "reference": "Garita Norte" },
+      "paymentMethod": "Tarjeta",
+      "deliveryMode": "delivery",
+      "shippingFee": 5,
+      "subtotal": 66,
+      "total": 71,
+      "status": "En preparación",
+      "branch": "Sucursal Equipetrol",
+      "items": [
+        { "productId": "sg-banana-split", "name": "Copa Banana Split", "size": "Plato Banana Split", "qty": 1, "unitPrice": 38, "flavors": ["Chocolate Belga", "Vainilla Cremosa", "Grosella"] },
+        { "productId": "sg-frappe-torta", "name": "Porción de Torta Helada", "size": "Porción Individual", "qty": 1, "unitPrice": 28, "flavors": ["Crema Americana"] }
+      ]
+    }
+  ],
+  "sales": [
+    { "id": "VTA-101", "date": "2026-11-11", "time": "10:45:12", "customer": "Cliente Mostrador", "method": "Efectivo", "total": 56, "branch": "Sucursal Centro", "cashier": "Carlos Méndez", "summary": "2x Helado Doble" },
+    { "id": "VTA-102", "date": "2026-11-11", "time": "12:18:30", "customer": "Lucía Fernández", "method": "QR", "total": 76, "branch": "Sucursal Equipetrol", "cashier": "Mateo Mendoza", "summary": "2x Copa de la Casa" },
+    { "id": "VTA-103", "date": "2026-11-11", "time": "14:20:15", "customer": "Sofía Vargas", "method": "QR", "total": 92, "branch": "Sucursal Centro", "cashier": "Carlos Méndez", "summary": "Pedido #SG2026-001" },
+    { "id": "VTA-104", "date": "2026-11-11", "time": "15:40:00", "customer": "Mauricio Arce", "method": "Tarjeta", "total": 68, "branch": "Sucursal Centro", "cashier": "Carlos Méndez", "summary": "2x Milkshake de Oreo" },
+    { "id": "VTA-105", "date": "2026-11-11", "time": "16:30:22", "customer": "Cliente Mostrador", "method": "Transferencia", "total": 110, "branch": "Sucursal Norte", "cashier": "Camila Rojas", "summary": "1x Helado 1 Kilogramo" },
+    { "id": "VTA-106", "date": "2026-11-11", "time": "17:12:44", "customer": "Cliente Mostrador", "method": "QR", "total": 40, "branch": "Sucursal Centro", "cashier": "Carlos Méndez", "summary": "Promo 2x Frappé Pie de Limón" }
+  ],
+  "cashboxes": [
+    {
+      "id": "CAJA-20261111-01",
+      "branch": "Sucursal Centro",
+      "cashier": "Carlos Méndez",
+      "openedAt": "2026-11-11 09:30:00",
+      "closedAt": null,
+      "openingAmount": 500,
+      "cashSales": 286,
+      "qrCardSales": 524,
+      "status": "Abierta"
+    },
+    {
+      "id": "CAJA-20261110-01",
+      "branch": "Sucursal Centro",
+      "cashier": "Carlos Méndez",
+      "openedAt": "2026-11-10 09:30:00",
+      "closedAt": "2026-11-10 22:15:00",
+      "openingAmount": 500,
+      "cashSales": 1120,
+      "qrCardSales": 1640,
+      "closingDeclared": 1620,
+      "status": "Cerrada"
+    }
+  ],
+  "events": [
+    {
+      "id": "EVT-9001",
+      "type": "CAJA",
+      "description": "Cajero abrió caja con fondo inicial de Bs. 500",
+      "user": "Carlos Méndez",
+      "date": "2026-11-11",
+      "time": "09:30:00",
+      "branch": "Sucursal Centro"
+    },
+    {
+      "id": "EVT-9002",
+      "type": "AUTH",
+      "description": "Usuario inició sesión en el panel administrativo",
+      "user": "Valentina Sologuren",
+      "date": "2026-11-11",
+      "time": "09:42:18",
+      "branch": "Sucursal Centro"
+    },
+    {
+      "id": "EVT-9003",
+      "type": "ADMIN",
+      "description": "Administrador actualizó stock de Conos Waffle Crocantes (+200 uds)",
+      "user": "Valentina Sologuren",
+      "date": "2026-11-11",
+      "time": "11:15:04",
+      "branch": "Sucursal Centro"
+    },
+    {
+      "id": "EVT-9004",
+      "type": "POS",
+      "description": "Cliente seleccionó producto: Copa Cookie Monster",
+      "user": "Sofía Vargas",
+      "date": "2026-11-11",
+      "time": "14:18:10",
+      "branch": "Sucursal Centro"
+    },
+    {
+      "id": "EVT-9005",
+      "type": "VENTA",
+      "description": "Se registró venta #SG2026-001 por Bs. 92 (Pago QR)",
+      "user": "Carlos Méndez",
+      "date": "2026-11-11",
+      "time": "14:20:15",
+      "branch": "Sucursal Centro"
+    },
+    {
+      "id": "EVT-9006",
+      "type": "CLIENTE",
+      "description": "Cliente realizó pedido #SG2026-002 (Helado 1 Kilogramo)",
+      "user": "Andrés Gutiérrez",
+      "date": "2026-11-11",
+      "time": "16:05:42",
+      "branch": "Sucursal Centro"
+    }
+  ],
+  "settings": {
+    "storeName": "SOLO GELATOS",
+    "slogan": "El sabor que te hace feliz",
+    "defaultBranch": "Sucursal Centro",
+    "currency": "Bs.",
+    "shippingFee": 5,
+    "freeShippingFrom": 100,
+    "taxRate": 0,
+    "apiMode": "demo-json-indexeddb",
+    "apiBaseUrl": "https://api.sologelatos.bo/v1 (Preparado para integración REST)"
+  }
+}

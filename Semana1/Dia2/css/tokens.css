@@ -1,0 +1,62 @@
+/* ==========================================================================
+   SOLO GELATOS - Design Tokens & Palette System
+   Identidad visual oficial: Crema, Rosa Pastel, Frambuesa, Turquesa, Durazno,
+   Azul Noche y Azul Oscuro para Tarjetas.
+   ========================================================================== */
+
+:root {
+  /* Paleta oficial de marca */
+  --sg-cream: #FFF8EE;
+  --sg-cream-soft: #FFFDF9;
+  --sg-cream-warm: #FBEBD9;
+  --sg-pastel-pink: #F5A9BC;
+  --sg-pastel-pink-soft: rgba(245, 169, 188, 0.22);
+  --sg-raspberry: #E92F70;
+  --sg-raspberry-hover: #D0215E;
+  --sg-raspberry-soft: rgba(233, 47, 112, 0.12);
+  --sg-turquoise: #42B9A9;
+  --sg-turquoise-hover: #359E90;
+  --sg-turquoise-soft: rgba(66, 185, 169, 0.14);
+  --sg-peach: #F5C99E;
+  --sg-peach-soft: rgba(245, 201, 158, 0.26);
+  --sg-night-blue: #101B2B;
+  --sg-card-dark: #26364C;
+  --sg-card-dark-elevated: #2F425C;
+  --sg-white: #FFFFFF;
+
+  /* Estados semánticos */
+  --sg-success: #24A16B;
+  --sg-success-soft: rgba(36, 161, 107, 0.15);
+  --sg-warning: #E59524;
+  --sg-warning-soft: rgba(229, 149, 36, 0.16);
+  --sg-danger: #DC3545;
+  --sg-danger-soft: rgba(220, 53, 69, 0.15);
+  --sg-info: #42B9A9;
+  --sg-info-soft: rgba(66, 185, 169, 0.16);
+
+  /* Tipografía */
+  --sg-font-display: 'Outfit', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --sg-font-body: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --sg-font-script: 'Pacifico', 'Dancing Script', cursive;
+
+  /* Radios y espaciado */
+  --sg-radius-xs: 8px;
+  --sg-radius-sm: 12px;
+  --sg-radius-md: 18px;
+  --sg-radius-lg: 24px;
+  --sg-radius-xl: 32px;
+  --sg-radius-pill: 999px;
+
+  /* Transiciones suaves */
+  --sg-transition-fast: 0.18s cubic-bezier(0.22, 1, 0.36, 1);
+  --sg-transition-base: 0.28s cubic-bezier(0.22, 1, 0.36, 1);
+  --sg-transition-theme: 0.35s ease;
+
+  /* Z-index layers */
+  --sg-z-header: 1020;
+  --sg-z-bottom-nav: 1025;
+  --sg-z-drawer: 1045;
+  --sg-z-modal: 1060;
+  --sg-z-toast: 1080;
+  --sg-z-splash: 1100;
+}
