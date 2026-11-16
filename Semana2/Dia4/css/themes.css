@@ -1,0 +1,222 @@
+/* ==========================================================================
+   SOLO GELATOS - Sistema Dual de Temas (Modo Claro y Modo Oscuro)
+   ========================================================================== */
+
+:root,
+html[data-theme="light"] {
+  color-scheme: light;
+
+  --sg-bg-body: #FFF8EE;
+  --sg-bg-secondary: #F8EFE2;
+  --sg-bg-surface: #FFFFFF;
+  --sg-bg-surface-alt: #FFFDF9;
+  --sg-bg-card-tint-pink: #FDEEF3;
+  --sg-bg-card-tint-teal: #EAF7F5;
+  --sg-bg-card-tint-peach: #FDF3E7;
+  --sg-bg-header: rgba(255, 248, 238, 0.92);
+  --sg-bg-bottom-nav: rgba(255, 255, 255, 0.96);
+  --sg-bg-input: #FFFFFF;
+  --sg-bg-sidebar: #101B2B;
+  --sg-bg-sidebar-hover: rgba(255, 255, 255, 0.08);
+  --sg-bg-chip: #FFFFFF;
+  --sg-bg-modal: #FFFFFF;
+  --sg-bg-table-hover: rgba(245, 169, 188, 0.12);
+
+  --sg-text-primary: #1D2939;
+  --sg-text-secondary: #5C6B7F;
+  --sg-text-muted: #7C8B9E;
+  --sg-text-inverse: #FFFFFF;
+  --sg-text-brand: #E92F70;
+  --sg-text-accent: #2A9688;
+
+  --sg-border-color: rgba(29, 41, 57, 0.09);
+  --sg-border-strong: rgba(29, 41, 57, 0.16);
+  --sg-border-pink: rgba(245, 169, 188, 0.55);
+
+  --sg-shadow-sm: 0 4px 14px rgba(16, 27, 43, 0.05);
+  --sg-shadow-md: 0 10px 28px rgba(16, 27, 43, 0.08);
+  --sg-shadow-lg: 0 18px 42px rgba(16, 27, 43, 0.12);
+  --sg-shadow-pink: 0 10px 24px rgba(233, 47, 112, 0.28);
+
+  --sg-blob-pink: rgba(245, 169, 188, 0.55);
+  --sg-blob-teal: rgba(66, 185, 169, 0.28);
+  --sg-blob-peach: rgba(245, 201, 158, 0.45);
+}
+
+html[data-theme="dark"] {
+  color-scheme: dark;
+
+  --sg-bg-body: #101B2B;
+  --sg-bg-secondary: #162438;
+  --sg-bg-surface: #26364C;
+  --sg-bg-surface-alt: #1E2C40;
+  --sg-bg-card-tint-pink: rgba(233, 47, 112, 0.15);
+  --sg-bg-card-tint-teal: rgba(66, 185, 169, 0.16);
+  --sg-bg-card-tint-peach: rgba(245, 201, 158, 0.14);
+  --sg-bg-header: rgba(16, 27, 43, 0.92);
+  --sg-bg-bottom-nav: rgba(24, 37, 56, 0.96);
+  --sg-bg-input: #1B283C;
+  --sg-bg-sidebar: #0B131F;
+  --sg-bg-sidebar-hover: rgba(66, 185, 169, 0.12);
+  --sg-bg-chip: #1E2C40;
+  --sg-bg-modal: #26364C;
+  --sg-bg-table-hover: rgba(66, 185, 169, 0.10);
+
+  --sg-text-primary: #F8FAFC;
+  --sg-text-secondary: #CBD5E1;
+  --sg-text-muted: #94A3B8;
+  --sg-text-inverse: #FFFFFF;
+  --sg-text-brand: #FF5C93;
+  --sg-text-accent: #5AD1C1;
+
+  --sg-border-color: rgba(255, 255, 255, 0.10);
+  --sg-border-strong: rgba(255, 255, 255, 0.18);
+  --sg-border-pink: rgba(245, 169, 188, 0.35);
+
+  --sg-shadow-sm: 0 4px 16px rgba(0, 0, 0, 0.25);
+  --sg-shadow-md: 0 12px 30px rgba(0, 0, 0, 0.34);
+  --sg-shadow-lg: 0 20px 48px rgba(0, 0, 0, 0.48);
+  --sg-shadow-pink: 0 10px 26px rgba(233, 47, 112, 0.38);
+
+  --sg-blob-pink: rgba(233, 47, 112, 0.16);
+  --sg-blob-teal: rgba(66, 185, 169, 0.16);
+  --sg-blob-peach: rgba(245, 201, 158, 0.12);
+}
+
+/* Transición global uniforme al cambiar tema */
+body,
+.sg-card,
+.sg-header,
+.sg-bottom-nav,
+.sg-drawer,
+.sg-modal-content,
+.form-control,
+.form-select,
+.btn,
+.table,
+.sg-chip,
+.sg-admin-sidebar,
+.sg-admin-topbar,
+.ui-widget-content {
+  transition: background-color var(--sg-transition-theme),
+              color var(--sg-transition-theme),
+              border-color var(--sg-transition-theme),
+              box-shadow var(--sg-transition-theme);
+}
+
+/* Adaptación completa de componentes Bootstrap 5 & jQuery UI al modo oscuro */
+html[data-theme="dark"] .form-control,
+html[data-theme="dark"] .form-select,
+html[data-theme="dark"] .input-group-text {
+  background-color: var(--sg-bg-input);
+  color: var(--sg-text-primary);
+  border-color: var(--sg-border-strong);
+}
+
+html[data-theme="dark"] .form-control::placeholder {
+  color: var(--sg-text-muted);
+}
+
+html[data-theme="dark"] .form-control:focus,
+html[data-theme="dark"] .form-select:focus {
+  background-color: var(--sg-bg-input);
+  color: var(--sg-text-primary);
+  border-color: var(--sg-turquoise);
+  box-shadow: 0 0 0 0.2rem rgba(66, 185, 169, 0.22);
+}
+
+html[data-theme="dark"] .modal-content,
+html[data-theme="dark"] .offcanvas {
+  background-color: var(--sg-bg-modal);
+  color: var(--sg-text-primary);
+  border-color: var(--sg-border-color);
+}
+
+html[data-theme="dark"] .btn-close {
+  filter: invert(1) grayscale(100%) brightness(200%);
+}
+
+html[data-theme="dark"] .table {
+  --bs-table-bg: transparent;
+  --bs-table-color: var(--sg-text-primary);
+  --bs-table-border-color: var(--sg-border-color);
+  --bs-table-hover-bg: var(--sg-bg-table-hover);
+  --bs-table-hover-color: var(--sg-text-primary);
+}
+
+html[data-theme="dark"] .dropdown-menu {
+  background-color: var(--sg-bg-surface);
+  border-color: var(--sg-border-color);
+  color: var(--sg-text-primary);
+}
+
+html[data-theme="dark"] .dropdown-item {
+  color: var(--sg-text-primary);
+}
+
+html[data-theme="dark"] .dropdown-item:hover {
+  background-color: var(--sg-bg-table-hover);
+}
+
+html[data-theme="dark"] .text-muted {
+  color: var(--sg-text-muted) !important;
+}
+
+/* Adaptación de jQuery UI widgets (Autocomplete & Slider) */
+.ui-autocomplete {
+  background: var(--sg-bg-surface) !important;
+  color: var(--sg-text-primary) !important;
+  border: 1px solid var(--sg-border-strong) !important;
+  border-radius: var(--sg-radius-sm) !important;
+  box-shadow: var(--sg-shadow-lg) !important;
+  padding: 6px !important;
+  z-index: 1090 !important;
+  font-family: var(--sg-font-body) !important;
+  max-height: 280px;
+  overflow-y: auto;
+}
+
+.ui-autocomplete .ui-menu-item-wrapper {
+  padding: 8px 12px !important;
+  border-radius: 8px !important;
+  color: var(--sg-text-primary) !important;
+  border: none !important;
+}
+
+.ui-autocomplete .ui-state-active,
+.ui-autocomplete .ui-menu-item-wrapper:hover {
+  background: var(--sg-raspberry-soft) !important;
+  color: var(--sg-raspberry) !important;
+  font-weight: 600 !important;
+}
+
+.ui-slider {
+  background: var(--sg-border-strong) !important;
+  border: none !important;
+  height: 8px !important;
+  border-radius: 999px !important;
+}
+
+.ui-slider-range {
+  background: linear-gradient(90deg, var(--sg-turquoise), var(--sg-raspberry)) !important;
+  border-radius: 999px !important;
+}
+
+.ui-slider-handle {
+  width: 22px !important;
+  height: 22px !important;
+  top: -7px !important;
+  border-radius: 50% !important;
+  background: var(--sg-raspberry) !important;
+  border: 3px solid var(--sg-white) !important;
+  box-shadow: 0 3px 10px rgba(233, 47, 112, 0.35) !important;
+  cursor: pointer !important;
+  outline: none !important;
+}
+
+/* Logos adaptativos por tema */
+.logo-theme-dark { display: none; }
+.logo-theme-light { display: inline-block; }
+
+html[data-theme="dark"] .logo-theme-dark { display: inline-block; }
+html[data-theme="dark"] .logo-theme-light { display: none; }
