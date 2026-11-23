@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Solo Gelatos — Semana 3: Mobile-First Grid y Flexbox</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <!-- Semana 3 - Flexbox Responsivo Vertical y Horizontal -->
+  <div class="contenedor-app">
+    <main class="area-contenido">
+      <h1>Solo Gelatos — Flexbox Único + CSS Grid</h1>
+      <p class="ayuda">En móvil vertical el dock se ubica abajo; en horizontal o escritorio (>= 768px) se traslada a la izquierda mediante order: -1.</p>
+      <section class="grid-catalogo">
+        <article class="tarjeta"><h2>Helados</h2><p>Artesanales de fruta fresca.</p></article>
+        <article class="tarjeta"><h2>Frappés</h2><p>Batidos helados de cacao y café.</p></article>
+        <article class="tarjeta"><h2>Repostería</h2><p>Tortas, cheesecakes y brownies.</p></article>
+        <article class="tarjeta"><h2>Waffles</h2><p>Dorados al momento con gelato.</p></article>
+      </section>
+    </main>
+    <nav class="dock-acciones" aria-label="Dock adaptable">
+      <a href="#inicio" class="dock-link">Inicio</a>
+      <a href="#catalogo" class="dock-link">Catálogo</a>
+      <a href="#reservas" class="dock-link">Reservas</a>
+      <a href="#contacto" class="dock-link">Contacto</a>
+    </nav>
+  </div>
+</body>
+</html>

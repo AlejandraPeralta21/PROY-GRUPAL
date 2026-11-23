@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Solo Gelatos — Semana 2: Calculador, Modal 30s y Filtro 3 Capas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <!-- Semana 2 - Calculador Modal 30s y Toast -->
+  <header class="cabecera"><h1>Solo Gelatos — Calculador 30s y Filtro 3 Capas</h1></header>
+  <main class="contenedor">
+    <section class="tarjeta">
+      <h2>Calculador de Eventos en Vivo</h2>
+      <p class="ayuda">Ajusta las horas del evento (40 Bs/hora) y abre el modal para ver el temporizador de 30 segundos y la alerta Toast.</p>
+      <div class="campo">
+        <label for="hrs">Horas de servicio de barra de gelatos</label>
+        <input id="hrs" type="number" min="1" value="2">
+      </div>
+      <p class="monto">Total: <span id="total">80</span> Bs</p>
+      <button type="button" id="btnModal" class="btn">Abrir Modal Tarifa Flash (30s)</button>
+    </section>
+
+    <!-- Semana 2 - Filtro de 3 Capas -->
+    <section class="tarjeta">
+      <h2>Filtro Dinámico de 3 Capas</h2>
+      <p class="ayuda">Selecciona primero la categoría (Capa 1) y luego la subcategoría (Capa 2) para mostrar el resultado en la Capa 3.</p>
+      <div class="fila">
+        <div class="campo">
+          <label for="capa1">Capa 1 · Categoría</label>
+          <select id="capa1">
+            <option value="">-- Seleccione categoría --</option>
+            <option value="Helados">Helados</option>
+            <option value="Frappés">Frappés</option>
+            <option value="Cafés">Cafés</option>
+            <option value="Repostería">Repostería</option>
+          </select>
+        </div>
+        <div class="campo">
+          <label for="capa2">Capa 2 · Especialidad</label>
+          <select id="capa2" disabled><option value="">-- Seleccione opción --</option></select>
+        </div>
+      </div>
+      <div id="resultadoFiltro" class="resultado" aria-live="polite">Seleccione las capas anteriores...</div>
+    </section>
+  </main>
+
+  <div id="modalConfirmacion" class="modal-backdrop" role="dialog" aria-modal="true" aria-label="Confirmación de tarifa flash">
+    <div class="modal">
+      <h3>Tarifa Flash Solo Gelatos</h3>
+      <div id="contadorModal" class="contador">00:30</div>
+      <button type="button" id="btnCerrarModal" class="btn">Cerrar</button>
+    </div>
+  </div>
+  <div id="toastAlerta" class="toast" role="status" aria-live="polite"></div>
+  <footer class="pie">Solo Gelatos · Semana 2 · Módulo 02</footer>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Solo Gelatos — Semana 1: Bitácora Día 2</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <!-- Semana 1 - Bitacora Dia 2 -->
+  <header class="cabecera"><h1>Solo Gelatos — Bitácora de Eventos Día 2</h1></header>
+  <main class="contenedor">
+    <section class="tarjeta">
+      <h2>Eventos change, submit y reset()</h2>
+      <p class="ayuda">Cambia la variante de gelato y envía el pedido para registrar ambos eventos y limpiar el formulario automáticamente.</p>
+      <form id="formularioOrden">
+        <div class="campo"><label for="campoUsuario">Nombre del cliente</label><input id="campoUsuario" type="text" required placeholder="Ej. Mateo Paredes"></div>
+        <div class="campo">
+          <label for="selectorVariante">Variante de helado</label>
+          <select id="selectorVariante">
+            <option value="Copa Frutilla Artesanal">Copa Frutilla Artesanal</option>
+            <option value="Waffle con Frutas">Waffle con Frutas</option>
+            <option value="Combo Familiar 4 Pints">Combo Familiar 4 Pints</option>
+          </select>
+        </div>
+        <button type="submit" class="btn">Confirmar Orden</button>
+      </form>
+      <div id="salidaBitacora" class="log" aria-live="polite"></div>
+    </section>
+  </main>
+  <footer class="pie">Solo Gelatos · Semana 1 · Módulo 06</footer>
+</body>
+</html>

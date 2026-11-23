@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#E80F61">
+  <meta name="description" content="Solo Gelatos — Gestión integral de heladería artesanal: ventas, catálogo, inventario y eventos.">
+  <title>Solo Gelatos – Bitacora</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/temas.css">
+  <link rel="stylesheet" href="../css/estilos.css">
+  <link rel="stylesheet" href="../css/animaciones.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <link rel="manifest" href="../manifest.webmanifest"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><link rel="apple-touch-icon" href="../images/app-icon-192.png">
+</head>
+<body data-view="bitacora">
+  <div class="app">
+    <header>
+      <button class="burger" id="burger" aria-label="Abrir menú"><i></i><i></i><i></i></button>
+      <img src="../images/logo.png" alt="Solo Gelatos">
+      <div class="search"><input placeholder="Buscar productos, ventas, proveedores..." aria-label="Buscar"><span class="search-ico"></span></div>
+      <div class="sp"></div>
+      <button class="ib n" aria-label="Notificaciones"><span class="bell-ico"></span><span class="badge">3</span></button>
+      <button class="ib" id="theme" aria-label="Cambiar tema"></button><button class="btn p install-pwa" id="install-pwa" hidden>Instalar app</button>
+      <div class="user"><span class="av">A</span><div><strong>Administrador</strong><small>Solo Gelatos</small></div><span class="caret"></span></div>
+    </header>
+    <div class="main">
+      <nav id="nav" aria-label="Navegación principal"></nav>
+      <div class="shade" id="shade"></div>
+      <section id="view"></section>
+    </div>
+  </div>
+  <div class="bottom" id="bottom">
+    <a data-v="inicio"><span class="bi home"></span>Inicio</a>
+    <a data-v="productos"><span class="bi productos"></span>Catálogo</a>
+    <a data-v="ventas"><span class="bi ventas"></span>Ventas</a>
+    <a data-v="eventos"><span class="bi eventos"></span>Eventos</a>
+  </div>
+  <div id="modal-root"></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="../js/iconos.js"></script>
+  <script src="../js/categorias.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/temas.js"></script>
+  <script src="../js/navegacion.js"></script>
+  <script src="../js/menu.js"></script>
+  <script src="../js/chrome.js"></script>
+  <script src="../js/pwa.js"></script>
+</body>
+</html>

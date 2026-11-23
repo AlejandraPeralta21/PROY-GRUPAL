@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Solo Gelatos — Semana 3: Desarrollo Ágil y Smoke Testing</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <!-- Semana 3 - Desarrollo Agil y Smoke Testing -->
+  <header class="cabecera"><h1>Solo Gelatos — Smoke Testing DOM</h1></header>
+  <main class="contenedor">
+    <article class="tarjeta">
+      <h2>Verificación Automatizada de Salud DOM</h2>
+      <p class="ayuda">Pulsa Ejecutar Smoke Test para confirmar que hay 0 imágenes sin alt y 0 enlaces vacíos en el documento.</p>
+      <img class="foto" src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=720&q=82" alt="Copa artesanal de frutilla Solo Gelatos" loading="lazy">
+      <div class="acciones">
+        <a href="#catalogo" class="enlace">Ir al catálogo</a>
+        <button type="button" id="btnSmokeTest" class="btn">Ejecutar Smoke Test</button>
+      </div>
+      <div id="salidaAudit" class="salida" aria-live="polite">Esperando ejecución...</div>
+    </article>
+  </main>
+  <footer class="pie">Solo Gelatos · Semana 3 · Módulo 06</footer>
+</body>
+</html>

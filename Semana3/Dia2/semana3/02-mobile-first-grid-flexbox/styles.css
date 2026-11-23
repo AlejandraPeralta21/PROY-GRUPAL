@@ -1,0 +1,17 @@
+/* Semana 3 - Flexbox Responsivo Vertical y Horizontal */
+:root{--pri:#E80F61;--sec:#10AAA6;--bg:#F6F5D8;--card:#FFFFFF;--tx:#2B2327;--mut:#6E6165;--line:#EDE4DD}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--tx)}
+.contenedor-app{display:flex;flex-direction:column;min-height:100dvh}
+.area-contenido{flex:1;padding:16px}
+.area-contenido h1{font-family:'Cormorant Garamond',serif;font-size:28px;margin-bottom:8px}
+.ayuda{color:var(--mut);font-size:13px;border-left:3px solid var(--sec);padding:8px 12px;background:var(--card);margin-bottom:14px}
+.grid-catalogo{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:14px}
+.tarjeta{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px}
+.dock-acciones{display:flex;justify-content:space-around;padding:10px;background:var(--card);border-top:1px solid var(--line)}
+.dock-link{min-width:44px;min-height:44px;display:flex;align-items:center;justify-content:center;padding:8px 12px;border-radius:10px;text-decoration:none;color:var(--tx);font-weight:600}
+.dock-link:hover,.dock-link.activo{background:var(--pri);color:#fff}
+@media (min-width: 768px), (orientation: landscape) {
+  .contenedor-app{flex-direction:row}
+  .dock-acciones{order:-1;flex-direction:column;justify-content:flex-start;gap:12px;width:160px;border-top:0;border-right:1px solid var(--line)}
+}

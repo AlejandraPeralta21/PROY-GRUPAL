@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Solo Gelatos — Semana 3: CWV, BEM, DOMPurify y SW</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/dompurify@3.1.6/dist/purify.min.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <!-- Semana 3 - Core Web Vitals BEM DOMPurify y Service Worker -->
+  <header class="cabecera"><h1>Solo Gelatos — CWV (16/9), BEM y DOMPurify</h1></header>
+  <main class="contenedor">
+    <article class="tarjeta-cwv">
+      <img class="tarjeta-cwv__media" src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=720&q=82" alt="Frappé artesanal Solo Gelatos" loading="lazy">
+      <div class="tarjeta-cwv__body">
+        <h2>Sanitización HTML con DOMPurify</h2>
+        <p class="ayuda">Escribe texto o etiquetas HTML peligrosas y pulsa Sanitizar para comprobar la limpieza con DOMPurify.sanitize().</p>
+        <label for="entradaHtml">Contenido a sanitizar</label>
+        <input id="entradaHtml" type="text" value="&lt;strong&gt;Gelato&lt;/strong&gt; &lt;img src=x onerror=alert(1)&gt; seguro">
+        <button type="button" id="btnSanitizar" class="btn">Sanitizar con DOMPurify</button>
+        <div id="salidaSegura" class="salida" aria-live="polite"></div>
+      </div>
+    </article>
+  </main>
+  <footer class="pie">Solo Gelatos · Semana 3 · Módulo 03</footer>
+</body>
+</html>

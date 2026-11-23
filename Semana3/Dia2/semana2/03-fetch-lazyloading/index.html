@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Solo Gelatos — Semana 2: Fetch, Lazy Loading y Lightbox</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <!-- Semana 2 - Fetch Lazy Loading y Bubbling -->
+  <header class="cabecera"><h1>Solo Gelatos — Fetch JSON, Lazy Loading y Lightbox</h1></header>
+  <main class="contenedor">
+    <p class="ayuda">Los productos se cargan mediante fetch() desde data.json con loading="lazy". Toca cualquier foto para abrir el visor Lightbox.</p>
+    <section id="catalogoFetch" class="grid" aria-live="polite"></section>
+  </main>
+  <div id="lightboxImagenVisor" class="lightbox" role="dialog" aria-modal="true" aria-label="Visor de imagen ampliada">
+    <div class="lightbox-caja">
+      <img id="lightboxImagenFoto" src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=720&q=82" alt="Vista ampliada de producto">
+      <div class="lightbox-pie">
+        <strong id="lightboxImagenTitulo">Solo Gelatos</strong>
+        <button type="button" id="btnCerrarVisor" class="btn">Cerrar</button>
+      </div>
+    </div>
+  </div>
+  <footer class="pie">Solo Gelatos · Semana 2 · Módulo 03</footer>
+</body>
+</html>

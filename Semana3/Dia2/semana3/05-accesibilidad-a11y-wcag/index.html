@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Solo Gelatos — Semana 3: Accesibilidad a11y y Contraste WCAG</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <!-- Semana 3 - Accesibilidad a11y y Contraste WCAG -->
+  <header class="cabecera">
+    <h1>Solo Gelatos — Accesibilidad WCAG y Alto Contraste</h1>
+    <button type="button" id="btnSimularContraste" class="btn" aria-pressed="false" aria-label="Activar modo alto contraste WCAG">Alto Contraste</button>
+  </header>
+  <main class="contenedor">
+    <article class="card-item">
+      <h2>Navegación por Teclado y Contraste AA/AAA</h2>
+      <p class="ayuda">Usa la tecla Tab para comprobar el anillo :focus-visible y pulsa Alto Contraste para alternar body.alto-contraste.</p>
+      <label for="saborA11y">Elige tu sabor favorito</label>
+      <select id="saborA11y">
+        <option value="frutilla">Helado Frutilla</option>
+        <option value="mango">Helado Mango</option>
+        <option value="vegano">Helado Vegano</option>
+      </select>
+    </article>
+  </main>
+  <footer class="pie">Solo Gelatos · Semana 3 · Módulo 05</footer>
+</body>
+</html>
