@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Solo Gelatos — Semana 2: Tree Shaking y Reservas Anti-XSS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <!-- Semana 2 - Tree Shaking y Reservas Anti-XSS -->
+  <header class="cabecera"><h1>Solo Gelatos — Tree Shaking Manual y Anti-XSS</h1></header>
+  <main class="contenedor">
+    <section class="tarjeta">
+      <h2>Cola de Reservas Sanitizada (textContent)</h2>
+      <p class="ayuda">Prueba ingresar etiquetas HTML maliciosas como &lt;script&gt; o &lt;img&gt;; el sistema neutraliza el XSS renderizando estrictamente con textContent.</p>
+      <form id="formReserva">
+        <div class="campo"><label for="resCliente">Nombre del cliente</label><input id="resCliente" type="text" required placeholder="Ej. Camila Rojas"></div>
+        <div class="campo"><label for="resDetalle">Detalle de reserva</label><input id="resDetalle" type="text" required placeholder="Ej. Mesa para 4 personas"></div>
+        <button type="submit" class="btn">Agregar a la Cola</button>
+      </form>
+      <ul id="colaReservas" class="lista" aria-live="polite"></ul>
+    </section>
+  </main>
+  <footer class="pie">Solo Gelatos · Semana 2 · Módulo 05</footer>
+</body>
+</html>

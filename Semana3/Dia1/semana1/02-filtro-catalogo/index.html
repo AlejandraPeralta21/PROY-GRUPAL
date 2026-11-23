@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Solo Gelatos — Semana 1: Filtro Catálogo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <!-- Semana 1 - Filtro Catalogo -->
+  <header class="cabecera"><h1>Solo Gelatos — Filtro por Atributo Dataset</h1></header>
+  <main class="contenedor">
+    <p class="ayuda">Selecciona una categoría para filtrar los productos mediante el atributo HTML5 data-categoria.</p>
+    <div class="filtros" role="group" aria-label="Filtrar productos">
+      <button type="button" class="btn" data-filtro="todos">Todos</button>
+      <button type="button" class="btn" data-filtro="helados">Helados</button>
+      <button type="button" class="btn" data-filtro="cafes">Cafés</button>
+      <button type="button" class="btn" data-filtro="reposteria">Repostería</button>
+      <button type="button" class="btn" data-filtro="waffles">Waffles</button>
+    </div>
+    <section class="grid">
+      <article class="card" data-categoria="helados"><h3>Helado Frutilla</h3><p>25 Bs · Gelato natural de estación.</p></article>
+      <article class="card" data-categoria="helados"><h3>Helado Vegano</h3><p>24 Bs · Base vegetal sin lácteos.</p></article>
+      <article class="card" data-categoria="cafes"><h3>Cappuccino</h3><p>18 Bs · Espresso de los Yungas.</p></article>
+      <article class="card" data-categoria="reposteria"><h3>Torta Chocolate</h3><p>22 Bs · Bizcocho artesanal con ganache.</p></article>
+      <article class="card" data-categoria="reposteria"><h3>Cheesecake Frutilla</h3><p>28 Bs · Crema de queso y fruta fresca.</p></article>
+      <article class="card" data-categoria="waffles"><h3>Waffle con Frutas</h3><p>32 Bs · Waffle belga con bola de gelato.</p></article>
+    </section>
+  </main>
+  <footer class="pie">Solo Gelatos · Semana 1 · Módulo 02</footer>
+</body>
+</html>

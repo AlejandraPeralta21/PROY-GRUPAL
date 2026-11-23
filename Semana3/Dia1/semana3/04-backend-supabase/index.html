@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Solo Gelatos — Semana 3: Backend Supabase Multi-Tenant</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <!-- Semana 3 - Backend Supabase Multi-Tenant y Offline-First -->
+  <header class="cabecera"><h1>Solo Gelatos — Supabase REST y Cola FIFO Offline</h1></header>
+  <main class="contenedor">
+    <section class="tarjeta">
+      <h2>Conexión Multi-Tenant (proyecto = solo_gelatos)</h2>
+      <p class="ayuda">Consulta la tabla promociones de Supabase filtrada por solo_gelatos o prueba encolar una reserva offline en localStorage.</p>
+      <div class="acciones">
+        <button type="button" id="btnConsultarSupa" class="btn">Consultar Promociones</button>
+        <button type="button" id="btnEncolarFifo" class="btn sec">Simular Cola FIFO Offline</button>
+      </div>
+      <div id="salidaSupa" class="salida" aria-live="polite">Listo para conectar con Supabase.</div>
+    </section>
+  </main>
+  <footer class="pie">Solo Gelatos · Semana 3 · Módulo 04</footer>
+</body>
+</html>

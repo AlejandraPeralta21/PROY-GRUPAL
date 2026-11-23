@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Solo Gelatos — Semana 2: Responsividad Crítica y Login</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <!-- Semana 2 - Responsividad Critica 4 Puntos Moviles y Login -->
+  <header class="cabecera">
+    <h1 class="titulo-truncado">Solo Gelatos — Panel Responsivo Móvil</h1>
+    <span class="badge-red">ONLINE</span>
+  </header>
+  <main class="contenedor">
+    <section class="tarjeta">
+      <h2>Acceso por Rol (sessionStorage)</h2>
+      <p class="ayuda">Prueba cambiar entre Cliente, Encargado y Administrador; la vista de compra se oculta para roles operativos.</p>
+      <form id="formLogin">
+        <div class="campo">
+          <label for="selRol">Seleccionar rol de prueba</label>
+          <select id="selRol">
+            <option value="cliente">Cliente</option>
+            <option value="encargado">Encargado</option>
+            <option value="admin">Administrador</option>
+          </select>
+        </div>
+        <button type="submit" class="btn">Iniciar Sesión</button>
+      </form>
+      <div id="vistaCliente" class="panel-rol">Interfaz de Cliente: Catálogo y Carrito de Compra activos.</div>
+      <div id="vistaOperativa" class="panel-rol" hidden>Interfaz Operativa (Encargado / Admin): Carrito de cliente oculto.</div>
+    </section>
+  </main>
+  <footer class="pie">Solo Gelatos · Semana 2 · Módulo 06</footer>
+</body>
+</html>

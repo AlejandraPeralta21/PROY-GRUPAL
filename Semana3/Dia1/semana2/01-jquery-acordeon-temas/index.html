@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Solo Gelatos — Semana 2: jQuery Acordeón y Temas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <!-- Semana 2 - jQuery Acordeon y Temas -->
+  <header class="cabecera">
+    <h1>Solo Gelatos — jQuery Acordeón, Filtros y Temas</h1>
+    <button type="button" id="btnTemaJq" class="btn">Cambiar Tema</button>
+  </header>
+  <main class="contenedor">
+    <section class="tarjeta">
+      <h2>Preguntas Frecuentes (slideToggle)</h2>
+      <p class="ayuda">Pulsa cada pregunta para abrir o cerrar su respuesta con jQuery slideToggle().</p>
+      <button type="button" class="accordion-btn">Sabores de temporada disponibles</button>
+      <div class="accordion-panel">Helado de frutilla, mango, oreo, vegano de frutos rojos y sin azúcar.</div>
+      <button type="button" class="accordion-btn">Sucursales en La Paz</button>
+      <div class="accordion-panel">Av. Arce 123 (Central), Sopocachi Calle 6 y Zona Sur Calle 21.</div>
+    </section>
+    <section class="tarjeta">
+      <h2>Buscador (keyup), Filtros (fadeIn/fadeOut) y Animación (.animate)</h2>
+      <div class="controles">
+        <label for="buscadorJq" class="sr-only">Buscar sabor</label>
+        <input id="buscadorJq" type="search" placeholder="Buscar sabor...">
+        <button type="button" class="btn filtro" data-cat="todos">Todos</button>
+        <button type="button" class="btn filtro" data-cat="helados">Helados</button>
+        <button type="button" class="btn filtro" data-cat="cafes">Cafés</button>
+        <button type="button" class="btn sec" id="btnAnimarTotal">Actualizar Monto</button>
+      </div>
+      <p id="totalMonto" class="monto">Total simulado: 50 Bs</p>
+      <div class="grid" id="listaJq">
+        <article class="item" data-cat="helados"><h3>Helado Frutilla</h3><p>25 Bs</p></article>
+        <article class="item" data-cat="helados"><h3>Helado Mango</h3><p>26 Bs</p></article>
+        <article class="item" data-cat="cafes"><h3>Cappuccino</h3><p>18 Bs</p></article>
+      </div>
+    </section>
+  </main>
+  <footer class="pie">Solo Gelatos · Semana 2 · Módulo 01</footer>
+</body>
+</html>

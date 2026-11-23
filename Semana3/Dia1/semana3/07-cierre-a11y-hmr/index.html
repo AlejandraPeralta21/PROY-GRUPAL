@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Solo Gelatos — Semana 3: Cierre A11Y HTML5 y HMR</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <!-- Semana 3 - Cierre A11Y HTML5 y HMR -->
+  <header class="cabecera">
+    <h1>Solo Gelatos — Cierre Semántico A11Y</h1>
+    <nav aria-label="Navegación de cierre">
+      <a href="#resumen">Resumen</a>
+      <a href="#auditoria">Auditoría</a>
+    </nav>
+  </header>
+  <main class="contenedor" id="resumen">
+    <article class="tarjeta" id="auditoria">
+      <h2>Auditoría Semántica HTML5 en Vivo</h2>
+      <h3>Jerarquía ordenada h1, h2 y h3</h3>
+      <p class="ayuda">Pulsa Auditar A11Y para contar las etiquetas semánticas (header, nav, main, article, footer) y confirmar 0 imágenes sin alt.</p>
+      <img class="foto" src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=720&q=82" alt="Torta artesanal de chocolate Solo Gelatos" loading="lazy">
+      <button type="button" id="btnAuditarA11Y" class="btn">Auditar A11Y HTML5</button>
+      <div id="reporteA11Y" class="salida" role="status" aria-live="polite">Pulsa el botón para iniciar la auditoría.</div>
+    </article>
+  </main>
+  <footer class="pie">Solo Gelatos · Semana 3 · Módulo 07 · Cierre P35-P36</footer>
+</body>
+</html>
